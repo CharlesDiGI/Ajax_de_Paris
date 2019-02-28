@@ -12,8 +12,14 @@
       <td class="text-center">
         <%= email.id %>
       </td>
-      <td>
-        <%= email.object %>
+        <% if email.read %>
+        <td>
+          <%= email.object %>
+        <% else %>
+          <td style="background-color:yellow">
+          <div style="color:red;font-style:italic"><%= email.object %></div>
+        <% end %>
+
       </td>
       <% if email.read %>
       <td class="text-center">
