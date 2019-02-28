@@ -6,7 +6,9 @@ class EmailsController < ApplicationController
   def show
     @email = Email.find(params[:id])
     @emails=Email.all # needed for sidebar, probably better to use a cell for this
-    @email.update_attribute(:read, [true])
+    puts @email.read
+    @email.toggle!(:read)
+    # @email.update_attribute(:read, [true])
         respond_to do |format|
         format.html # show.html.erb
         format.js {render layout: false}
