@@ -1,0 +1,11 @@
+<div class="card">
+    <h3 class="card-header">
+        <%= @email.object %>
+    </h3>
+    <div class="card-body">
+        <p class="card-text">
+            <%= @email.body %>
+            <%= link_to "Delete", email_path(@email.id), method: :delete, :class => "btn btn-primary", remote: true %>
+        </p>
+    </div>
+</div>
