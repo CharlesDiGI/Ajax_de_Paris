@@ -1,11 +1,14 @@
 <div class="card">
     <h3 class="card-header">
         <%= @email.object %>
+        <div class="btn float-right" id="close-show">Close</div>
     </h3>
     <div class="card-body">
         <p class="card-text">
             <%= @email.body %>
-            <%= link_to "Delete", email_path(@email.id), method: :delete, :class => "btn btn-primary", remote: true %>
+            <div>
+                <%= link_to "Delete", email_path(@email.id), method: :delete, :class => "btn btn-primary float-right", remote: true %>
+            </div>
         </p>
     </div>
 </div>

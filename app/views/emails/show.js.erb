@@ -1,4 +1,11 @@
 <%# $('show-mail').html("<%= j (render 'email_show')") %>
+$( document ).ready(function() {
 
 $('#show-mail').html("<%= j (render 'email_show') %>");
+$("#show-mail").show();
 $('#mail-list').html("<%= j (render 'emails_list') %>");
+
+  $(document).on("click", "#close-show", function(){
+    $("#show-mail").hide();
+  });
+});
