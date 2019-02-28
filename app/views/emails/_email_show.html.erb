@@ -7,7 +7,7 @@
         <p class="card-text">
             <%= @email.body %>
             <div>
-                <%= link_to "Delete", email_path(@email.id), method: :delete, :class => "btn btn-primary float-right", remote: true %>
+                <%= link_to "Delete", email_path(@email.id), method: :delete, :class => "btn btn-outline-primary float-right", remote: true %>
             </div>
         </p>
     </div>
