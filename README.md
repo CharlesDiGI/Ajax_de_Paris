@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Créé par **Charles Di Giampietro** (**@Charl** sur Slack)
 
-Things you may want to cover:
+Suite et fin du JS/JQUERY/AJAX/etc..., avec des features des folaïe !!
 
-* Ruby version
+En gros: une liste de mails top-secrets du FBI, que tu peux afficher (et ouais), que tu peux même supprimer si t'es un chaud (héééé ouais)
+et que tu peux même fermer quand t'as plus envie (héééééé ouaaaiiiiis, celle-là elles est pour moi, c'est cadeau).
 
-* System dependencies
+![Popop](https://gph.is/1oMAwql)
 
-* Configuration
+## Step by step pour tester le projet chez oit
 
-* Database creation
+Comme d'hab: `git clone` `bundle install` puis `rails db:create db:migrate db:seed`
 
-* Database initialization
+non je déconne, regarde plutot ici: 👇
 
-* How to run the test suite
+## lien vers les internets
 
-* Services (job queues, cache servers, search engines, etc.)
+Tu peux voir le site en live sur: **https://to-do-hero-ku-charles.herokuapp.com/**
 
-* Deployment instructions
 
-* ...
+![hééééé ouais](https://gph.is/g/amW58y4)
