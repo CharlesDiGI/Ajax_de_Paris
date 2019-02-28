@@ -1,0 +1,5 @@
+$(document.getElementById('<%= @category.id %>').querySelectorAll('ul')[0]).hide()
+
+$(document.getElementById('<%= @category.id %>').querySelectorAll('ul')[0].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>")).hide()
+
+$(document.getElementById('<%= @category.id %>').querySelectorAll('ul')[0]).slideDown('slow')

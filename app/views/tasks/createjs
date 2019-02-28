@@ -1,0 +1,40 @@
+$(function() {
+    // document.getElementById('<%= @category.id %>').querySelectorAll('ul')[0].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>");
+    $('<%= @category.id %> ul:eq(0)').hide().slidedown(100);
+
+});
+document.getElementById('<%= @category.id %>').querySelectorAll('ul')[0].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>");
+// .hide().slideDown(100);
+
+//let myTask = getElementById('<%= @category.id %>').querySelectorAll('ul')[0];
+//let $myTask = $(myTask);
+//$myTask.hide()
+//$myTask.slideDown('slow');
+
+
+// $(function() {
+//     // Ici, le DOM est entièrement défini
+
+//     let $myTitle = $("div.container li");
+//     let $myContainer = $("div.container ul div");
+//     console.log($myContainer);
+//     $myContainer.hide();
+
+//     $myTitle.each(function (index) {
+//         $(this).click(function () {
+//             $(this).next().toggle();
+//         });
+//     });
+
+//     let $myImg = $(".rounded-circle:eq(0)");
+//     let $myDropdown = $(".navbar-nav");
+//     console.log($myImg);
+//     console.log($myDropdown);
+
+//     $myImg.click(function () {
+//         $myDropdown.toggle();
+//     });
+
+
+
+// });
